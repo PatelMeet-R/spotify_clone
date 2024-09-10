@@ -6,7 +6,6 @@ body{
   color: #fff ;
   overflow: hidden;
 }
-/* 1rem=16px */
 .main{
     display:flex;
     height: 100vh;
@@ -184,10 +183,11 @@ bottom: 7rem;
     margin-left: 1rem ;
 }
 /*  */
-@media (max-width: 1000px ){
+@media (max-width: 800px ){
     .hide{
         display: none;
     }
+    
 }
 .card{
     width: 150px;
