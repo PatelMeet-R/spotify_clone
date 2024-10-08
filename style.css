@@ -187,16 +187,30 @@ bottom: 7rem;
     .hide{
         display: none;
     }
-    
+    .info{
+        flex-direction: column;
+    }
+    .colum{
+        border-bottom: 1px solid #ffffff3b;
+        padding: 0 0 15px 0;
+    }
+}
+.card1 img{
+    width: 200px;
+    border-radius: .5rem;
+    height: 10rem;
 }
 .card{
     width: 150px;
     padding: 1rem 1.5rem 0 1.5rem ;
     border-radius: .5rem;
     margin: 1rem .2rem;
+    flex-grow: 1;
+flex-shrink: 0;
+/* flex-basis: 100%; */
+scroll-snap-align:start;
     &:hover{
         background-color: #242424;
-
     }
 }
 h2{
@@ -204,7 +218,12 @@ h2{
 }
 .card-container{
     display: flex;
-    flex-wrap: wrap;
+    overflow-x:auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+.card-container::-webkit-scrollbar {
+    display: none;
 }
 .card-img{
     width: 100%;
